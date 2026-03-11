@@ -64,6 +64,12 @@ La historia está alineada con el flujo de compra principal y objetivos del MVP.
 - Se genera archivo PDF descargable
 - El sistema registra logs de trazabilidad del flujo completo
 
+### **Tabla Comparativa**
+
+| HU original | HU refinada por la instrucción | Diferencias detectadas |
+|-------------|--------------------------------|------------------------|
+| "Como Cliente, quiero seleccionar un asiento, reservarlo temporalmente, agregarlo al carrito y pagar para recibir mi boleto con QR" | "Como Cliente autenticado, quiero seleccionar un asiento disponible, reservarlo temporalmente por 15 minutos, agregarlo a mi carrito y proceder con el pago mediante tarjeta de crédito/débito para recibir mi boleto digital con código QR por email y descargarlo como PDF" | La instrucción añadió especificidad en: autenticación requerida, tiempo exacto de reserva (15 min), métodos de pago específicos, entrega por email y formato PDF, criterios de aceptación explícitos |
+
 ---
 
 ## Historia de Usuario 2: HU-P2 - Ver Eventos y Mapas de Asientos
@@ -122,6 +128,12 @@ Alineada con el flujo de navegación y descubrimiento (P2). Inconsistencias:
 - Paginación para más de 20 eventos
 - Navegación intuitiva entre eventos y mapas
 
+### **Tabla Comparativa**
+
+| HU original | HU refinada por la instrucción | Diferencias detectadas |
+|-------------|--------------------------------|------------------------|
+| "Como Visitante, quiero ver eventos y mapas de asientos para elegir qué reservar" | "Como Visitante, quiero explorar una lista filtrable de eventos disponibles y visualizar mapas interactivos de asientos con disponibilidad en tiempo real para identificar eventos de mi interés y ubicaciones preferidas antes de proceder al registro para compra" | La instrucción añadió: funcionalidades específicas (filtros, interactividad), disponibilidad en tiempo real, clarificación del propósito (identificar interés), proceso siguiente (registro para compra), y criterios de aceptación detallados |
+
 ---
 
 ## Historia de Usuario 3: HU-P3 - Crear Eventos y Configurar Asientos
@@ -179,6 +191,12 @@ Alineada con el flujo de gestión de organizadores (P3). Inconsistencias:
 - Configuración de precios diferenciados por zona/tipo de asiento
 - Validación de datos antes de publicación
 - Vista previa del evento antes de activar ventas
+
+### **Tabla Comparativa**
+
+| HU original | HU refinada por la instrucción | Diferencias detectadas |
+|-------------|--------------------------------|------------------------|
+| "Como Organizador, quiero crear eventos y configurar asientos" | "Como Organizador autenticado, quiero crear eventos con información completa (título, fecha, ubicación, descripción) y configurar el layout de asientos con precios y restricciones por zona para publicar eventos atractivos y maximizar las ventas de boletos" | La instrucción añadió: autenticación requerida, campos específicos del evento, configuración detallada de asientos (layout, precios, restricciones por zona), valor explícito (maximizar ventas), y criterios de aceptación completos |
 
 ---
 
